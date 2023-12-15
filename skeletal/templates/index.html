@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skeletal</title>
+</head>
+<body>
+    <form action="/serve">
+        <input type="text" name="url" id="url" class="url">
+        <input type="submit" value="Submit">
+    </form>
+    <script>
+        function reg() {
+        if ("serviceWorker" in navigator) {
+    // Register a service worker hosted at the root of the
+    // site using the default scope.
+    navigator.serviceWorker.register("/sw.js").then(
+      (registration) => {
+        alert("Service worker registration succeeded:", registration);
+      },
+      (error) => {
+        alert(`Service worker registration failed: ${error}`);
+      },
+    );
+  } else {
+    alert("Service workers are not supported.");
+  }
+}
+function unreg() {
+    navigator.serviceWorker.getRegistrations().then(function(registrations) {
+    for(let registration of registrations) {
+        registration.unregister();
+    } 
+});
+}
+
+// unreg()
+ reg() 
+  </script>
+</body>
+</html>
