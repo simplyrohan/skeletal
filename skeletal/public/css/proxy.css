@@ -19,4 +19,19 @@ body {
     color: var(--text);
 
     caret-color: var(--accent);
+
+    animation-name: expand;
+    animation-duration: 0.8s;
+    animation-delay: 500ms;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+}
+
+@keyframes expand {
+    from {
+        width: 0vw;
+    }
+    to {
+        width: 50vw;
+    }
 }
