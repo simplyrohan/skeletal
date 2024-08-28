@@ -1,0 +1,22 @@
+body {
+    display: flex;
+
+    width: 100vw;
+    height: 100vh;
+
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#uv-address {
+    padding: 1rem;
+    border-radius: 1000rem;
+    border: none;
+
+    width: 0vw;
+
+    background-color: var(--secondary);
+    color: var(--text);
+
+    caret-color: var(--accent);
+}
