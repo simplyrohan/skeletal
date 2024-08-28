@@ -1,0 +1,16 @@
+{
+  "name": "skeletal",
+  "version": "1.0.0",
+  "description": "Chill out, game, or browse the web",
+  "engines": {
+    "npm": ">=9.0.0",
+    "node": ">=18.0.0"
+  },
+  "scripts": {
+    "start": "node skeletal/src/index.js"
+  },
+  "dependencies": {
+    "@tomphttp/bare-server-node": "^2.0.2",
+    "express": "^4.19.2"
+  }
+}

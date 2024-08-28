@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Skeletal - Home</title>
+    <script>
+        registerSW()
+    </script>
+</head>
+
+<body>
+    <form id="uv-form">
+        <!-- <i id="addressIcon" class="search-icon fas fa-magnifying-glass"></i> -->
+        <input id="uv-address" type="text" placeholder="Search Google or type a URL" />
+    </form>
+    <div>
+        <p id="uv-error"></p>
+        <pre id="uv-error-code"></pre>
+    </div>
+    <script src="uv/uv.bundle.js" defer></script>
+    <script src="uv/uv.config.js" defer></script>
+    <script src="uv/register-sw.js" defer></script>
+    <script src="uv/search.js" defer></script>
+    <script src="uv/proxy.js" defer></script>
+</body>
+
+</html>
