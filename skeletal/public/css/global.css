@@ -31,3 +31,53 @@ a {
     color: var(--accent-2);
     font-weight: 500;
 }
+
+nav {
+    display: flex;
+    height: 100vh;
+    width: 4vw;
+    background-color: var(--primary);
+
+    flex-direction: column;
+    gap: 2vw;
+    padding-top: 2vw;
+
+    align-items: center;
+
+    .nav-link {
+        display: flex;
+
+        background-color: var(--secondary);
+
+        height: 3vw;
+        width: 3vw;
+
+        justify-content: center;
+        align-items: center;
+        border-radius: 0.5rem;
+
+        .nav-icon {
+            height: 75%;
+            width: 75%;
+            background-color: white;
+
+        }
+
+        .nav-icon.home {
+            mask: url("../icons/home.svg") no-repeat center;
+            -webkit-mask: url("../icons/home.svg") no-repeat center;
+
+        }
+        .nav-icon.games {
+            mask: url("../icons/games.svg") no-repeat center;
+            -webkit-mask: url("../icons/games.svg") no-repeat center;
+        }
+
+        .nav-icon.proxy {
+            mask: url("../icons/proxy.svg") no-repeat center;
+            -webkit-mask: url("../icons/proxy.svg") no-repeat center;
+        }
+    }
+
+
+}
