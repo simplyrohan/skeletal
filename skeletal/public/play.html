@@ -1,11 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Play Game</title>
 </head>
+
 <body>
-    
+    <iframe src="" frameborder="0" id="game-frame" style="height: 50vh; width: 50vw;"></iframe>
+    <script>
+        gameFrame = document.getElementById('game-frame');
+
+        gameFrame.src = `games/${new URLSearchParams(window.location.search).get('game')}/index.html`;
+    </script>
 </body>
+
 </html>
